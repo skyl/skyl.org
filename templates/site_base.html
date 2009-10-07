@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load openid_tags %}
+{% load ifsetting_tag %}
+{% load svn_app_version %}
+{% load analytics %}
+
+{% block extra_head_base %}
+    <link rel="stylesheet" href="{{ MEDIA_URL }}pinax/css/topics.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/site_tabs.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/social_project.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/tasks.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}pinax/css/jquery.autocomplete.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/new.css" />
+
+    <script type="text/javascript" src="{{ MEDIA_URL }}pinax/js/topics.js"></script>
+    {% block extra_head %}{% endblock %}
+{% endblock %}
+
+{% block login %}
+    {% if user.is_authenticated %}
+        {% openid_icon openid user %}<b>{{ user }}</b> | <a href="{% url acct_email %}">{% trans "Account" %}</a> | {% if user.is_staff %}<a href="/administrate/">{% trans "Admin" %}</a> | {% endif %}<a href="/openid/logout/?next={% url acct_logout %}">{% trans "Logout" %}</a>
+    {% else %}
+        <a href="{% url acct_login %}">{% trans "Login" %}</a> {% ifsetting ACCOUNT_OPEN_SIGNUP %}{% trans "or" %} <a href="{% url acct_signup %}"><b>{% trans "Sign up" %}</b></a>{% endifsetting %}
+    {% endif %}
+{% endblock %}
+
+{% block locale_switcher %}
+    <form action="{% if request.user.is_authenticated %}{% url acct_language_change %}{% else %}/i18n/setlang/{% endif %}" method="post" id="locale_switcher">
+        <select name="language" onchange="$('#locale_switcher').submit()">
+            {% for lang in LANGUAGES %}
+                <option value="{{ lang.0 }}"{% ifequal lang.0 LANGUAGE_CODE %} selected="selected"{% endifequal %}>{{ lang.1 }}</option>
+            {% endfor %}
+        </select>
+    </form>
+{% endblock %}
+
+{% block logo_link_image %}<a href="{% url home %}"><img src="{{ MEDIA_URL }}pinax/images/logo.png" alt="Pinax"/></a>{% endblock %}
+
+{% block right_tabs %}
+        <ul class="tabs">{% spaceless %}
+            <li id="tab_listings"><a href="{% url listings_all %}">{% trans "Listings" %}</a></li>
+            <li id="tab_events"><a href="{% url events_all %}">{% trans "Events" %}</a></li>
+            <li id="tab_projects"><a href="{% url project_list %}">{% trans "Projects" %}</a></li>
+            <li id="tab_bookmarks"><a href="{% url all_bookmarks %}">{% trans "Links" %}</a></li>
+            <li id="tab_blogs"><a href="{% url blog_list_all %}">{% trans "Log" %}</a></li>
+    {% if user.is_authenticated %}
+            <li id="tab_profile"><a href="{% url profile_detail user %}">{% trans "People" %}</a></li>
+            <li id="tab_inbox"><a href="{% url messages_inbox %}">{% trans "Inbox" %}({{ combined_inbox_count }})</a></li>
+    {% endif %}
+        {% endspaceless %}</ul>
+{% endblock %}
+
+{% block footer %}
+<div class="legal">
+    {% trans "&copy; 2009 skyl.org" %}
+    - <a href="{% url about %}">{% trans "About" %}</a>
+    - <a href="{% url terms %}">{% trans "Terms of Service" %}</a>
+    - <a href="{% url privacy %}">{% trans "Privacy Policy" %}</a>
+    - <a href="{% url dmca %}">{% trans "DMCA Notice" %}</a>
+    - Version: {% svn_app_version %}
+    - Django: {% svn_app_version "django" %}
+</div>
+{% endblock %}
+
+{% block extra_body_base %}
+    {% urchin %}
+    <script src="{{ MEDIA_URL }}base.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}jquery.ajaxQueue.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}jquery.autocomplete.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}tasks.js" type="text/javascript"></script>
+    <script src="{{ MEDIA_URL }}pinax/js/tools.scrollable-1.0.5.min.js" type="text/javascript"></script>
+    <script>
+    jQuery("#id_tags").autocomplete('/tagging_utils/autocomplete/tasks/task/', {
+        max: 10,
+        highlight: false,
+        multiple: true,
+        multipleSeparator: " ",
+        scroll: true,
+        scrollHeight: 300,
+        matchContains: true,
+        autoFill: true,
+    }); 
+    $(function(){
+        $('ul.tabs li').hover(
+            function() {
+                $(this).css({"background":"#fff"});
+            },
+            function() {
+                $(this).css({"background":"#000"});
+            }
+        );
+        
+        $('body.listings #tab_listings, body.events #tab_events, body.projects #tab_projects, body.profile #tab_profile,body.blogs #tab_blogs, body.swaps #tab_swaps, body.photos #tab_photos, body.tribes #tab_tribes, body.tweets #tab_tweets, body.bookmarks #tab_bookmarks, body.locations #tab_locations, body.inbox #tab_inbox').hover(
+            function() {
+                $(this).css({"background":"#000",});
+            },
+            function() {
+                $(this).css({"background":"#fff",});
+            }
+        );
+        $('body.listings #tab_listings a, body.events #tab_events a, body.projects #tab_projects a, body.profile #tab_profile a,body.blogs #tab_blogs a, body.swaps #tab_swaps a, body.photos #tab_photos a, body.tribes #tab_tribes a, body.tweets #tab_tweets a, body.bookmarks #tab_bookmarks a, body.locations #tab_locations a, body.inbox #tab_inbox a').hover(
+            function() {
+                $(this).css({"color":"#fff",});
+            },
+            function() {
+                $(this).css({"color":"#000",});
+            }
+        );
+        $('div#div_id_slug');
+    });
+    </script>
+    {% block extra_body %}{% endblock %}
+{% endblock %}

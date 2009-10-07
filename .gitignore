@@ -1,0 +1,12 @@
+site_media/photologue/*
+cron_mail.log
+dev.db
+media/images/*
+media/pdfs/*
+media/videos/*
+local_settings.py
+*.pyc
+*.swp
+*.~
+site_media/avatars/*
+

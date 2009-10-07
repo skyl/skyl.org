@@ -1,0 +1,247 @@
+Downloading/unpacking django-wikiapp==0.2.0dev
+  Getting page http://pypi.python.org/simple/django-wikiapp
+  URLs to search for versions for django-wikiapp==0.2.0dev:
+  * http://pypi.python.org/simple/django-wikiapp/0.2.0dev
+  * http://pypi.python.org/simple/django-wikiapp/
+  * http://pypi.pinaproject.com
+  Skipping link http://pypi.pinaproject.com (from -f); not a file
+  Getting page http://pypi.python.org/simple/django-wikiapp/0.2.0dev
+  Getting page http://pypi.python.org/simple/django-wikiapp/
+  Getting page http://pypi.pinaproject.com
+  Could not fetch URL http://pypi.pinaproject.com: <urlopen error [Errno -2] Name or service not known>
+  Will skip URL http://pypi.pinaproject.com when looking for download links for django-wikiapp==0.2.0dev
+  Getting page http://launchpad.net/django-wikiapp/
+  Could not fetch URL http://pypi.python.org/simple/django-wikiapp/0.2.0dev: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/django-wikiapp/0.2.0dev when looking for download links for django-wikiapp==0.2.0dev
+  Getting page http://launchpad.net/django-wikiapp/
+  Analyzing links from page http://pypi.python.org/simple/django-wikiapp/
+    Found link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.1.tar.gz#md5=a724e560ad714a89fd5ae3a3a26977ce (from http://pypi.python.org/simple/django-wikiapp/), version: 0.1.1
+    Found link http://pypi.python.org/packages/any/d/django-wikiapp/django-wikiapp-0.1.2.linux-i686.tar.gz#md5=6ab4663e5876c761e45adb66859b8f3c (from http://pypi.python.org/simple/django-wikiapp/), version: 0.1.2.linux-i686
+    Found link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.0.tar.gz#md5=0bacd5b0b1b4f11581e244aff58fde52 (from http://pypi.python.org/simple/django-wikiapp/), version: 0.1.0
+    Found link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.2.tar.gz#md5=dbfe3d30413a78492f350cfd27559b88 (from http://pypi.python.org/simple/django-wikiapp/), version: 0.1.2
+    Skipping link http://launchpad.net/django-wikiapp/ (from http://pypi.python.org/simple/django-wikiapp/); not a file
+  Analyzing links from page https://launchpad.net/django-wikiapp/
+    Skipping link http://feeds.launchpad.net/django-wikiapp/announcements.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/latest-bugs.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/branches.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/revisions.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/lazr/assets/skins/sam/lazr.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/inlineedit/assets/skins/sam/editor.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/autocomplete/assets/skins/sam/autocomplete.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/overlay/assets/skins/sam/pretty-overlay.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/formoverlay/assets/formoverlay.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/picker/assets/skins/sam/picker.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/activator/assets/skins/sam/activator.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/choiceedit/assets/choiceedit-core.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/@@/launchpad.png (from https://launchpad.net/django-wikiapp/); unknown archive format: .png
+    Skipping link https://launchpad.net/django-wikiapp/+login (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://code.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://bugs.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://blueprints.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://translations.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://answers.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+announcements (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+download (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://bazaar.launchpad.net/%7edjango-wikiapp/django-wikiapp/main/files/head:/docs/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://pypi.python.org/pypi/django-wikiapp/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://pypi.python.org/packages/source/d/django-wikiapp/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7eeopadoan (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7edjango-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+filebug (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+addquestion (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+series (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7ejezdez (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7ebrosner (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7edanfairs (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7egabriel.padoan (from https://launchpad.net/django-wikiapp/); unknown archive format: .padoan
+    Skipping link https://launchpad.net/django-wikiapp/+topcontributors (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+rdf (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/+tour (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://help.launchpad.net/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://canonical.com/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/legal (from https://launchpad.net/django-wikiapp/); not a file
+  Analyzing links from page https://launchpad.net/django-wikiapp/
+    Skipping link http://feeds.launchpad.net/django-wikiapp/announcements.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/latest-bugs.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/branches.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/revisions.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/lazr/assets/skins/sam/lazr.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/inlineedit/assets/skins/sam/editor.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/autocomplete/assets/skins/sam/autocomplete.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/overlay/assets/skins/sam/pretty-overlay.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/formoverlay/assets/formoverlay.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/picker/assets/skins/sam/picker.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/activator/assets/skins/sam/activator.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/choiceedit/assets/choiceedit-core.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/@@/launchpad.png (from https://launchpad.net/django-wikiapp/); unknown archive format: .png
+    Skipping link https://launchpad.net/django-wikiapp/+login (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://code.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://bugs.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://blueprints.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://translations.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://answers.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+announcements (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+download (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://bazaar.launchpad.net/%7edjango-wikiapp/django-wikiapp/main/files/head:/docs/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://pypi.python.org/pypi/django-wikiapp/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://pypi.python.org/packages/source/d/django-wikiapp/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7eeopadoan (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7edjango-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+filebug (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+addquestion (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+series (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7ejezdez (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7ebrosner (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7edanfairs (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7egabriel.padoan (from https://launchpad.net/django-wikiapp/); unknown archive format: .padoan
+    Skipping link https://launchpad.net/django-wikiapp/+topcontributors (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+rdf (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/+tour (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://help.launchpad.net/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://canonical.com/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/legal (from https://launchpad.net/django-wikiapp/); not a file
+  Ignoring link http://pypi.python.org/packages/any/d/django-wikiapp/django-wikiapp-0.1.2.linux-i686.tar.gz#md5=6ab4663e5876c761e45adb66859b8f3c (from http://pypi.python.org/simple/django-wikiapp/), version 0.1.2.linux-i686 doesn't match ==0.2.0dev
+  Ignoring link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.2.tar.gz#md5=dbfe3d30413a78492f350cfd27559b88 (from http://pypi.python.org/simple/django-wikiapp/), version 0.1.2 doesn't match ==0.2.0dev
+  Ignoring link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.1.tar.gz#md5=a724e560ad714a89fd5ae3a3a26977ce (from http://pypi.python.org/simple/django-wikiapp/), version 0.1.1 doesn't match ==0.2.0dev
+  Ignoring link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.0.tar.gz#md5=0bacd5b0b1b4f11581e244aff58fde52 (from http://pypi.python.org/simple/django-wikiapp/), version 0.1.0 doesn't match ==0.2.0dev
+  Could not find a version that satisfies the requirement django-wikiapp==0.2.0dev (from versions: 0.1.2.linux-i686, 0.1.2, 0.1.1, 0.1.0)
+No distributions matching the version for django-wikiapp==0.2.0dev
+Exception information:
+Traceback (most recent call last):
+  File "/home/skylar/pinax/pinax-env/lib/python2.6/site-packages/pip-0.4-py2.6.egg/pip.py", line 274, in main
+    self.run(options, args)
+  File "/home/skylar/pinax/pinax-env/lib/python2.6/site-packages/pip-0.4-py2.6.egg/pip.py", line 431, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/home/skylar/pinax/pinax-env/lib/python2.6/site-packages/pip-0.4-py2.6.egg/pip.py", line 1813, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/home/skylar/pinax/pinax-env/lib/python2.6/site-packages/pip-0.4-py2.6.egg/pip.py", line 1109, in find_requirement
+    raise DistributionNotFound('No distributions matching the version for %s' % req)
+DistributionNotFound: No distributions matching the version for django-wikiapp==0.2.0dev
+------------------------------------------------------------
+/home/skylar/pinax/pinax-env/bin/pip run on Thu Aug 27 20:48:29 2009
+Downloading/unpacking django-wikiapp==0.2.0dev
+  Getting page http://pypi.python.org/simple/django-wikiapp
+  URLs to search for versions for django-wikiapp==0.2.0dev:
+  * http://pypi.python.org/simple/django-wikiapp/0.2.0dev
+  * http://pypi.python.org/simple/django-wikiapp/
+  * http://pypi.pinaproject.com
+  Skipping link http://pypi.pinaproject.com (from -f); not a file
+  Getting page http://pypi.python.org/simple/django-wikiapp/0.2.0dev
+  Getting page http://pypi.python.org/simple/django-wikiapp/
+  Getting page http://pypi.pinaproject.com
+  Could not fetch URL http://pypi.pinaproject.com: <urlopen error [Errno -2] Name or service not known>
+  Will skip URL http://pypi.pinaproject.com when looking for download links for django-wikiapp==0.2.0dev
+  Could not fetch URL http://pypi.python.org/simple/django-wikiapp/0.2.0dev: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/django-wikiapp/0.2.0dev when looking for download links for django-wikiapp==0.2.0dev
+  Getting page http://launchpad.net/django-wikiapp/
+  Analyzing links from page http://pypi.python.org/simple/django-wikiapp/
+    Found link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.1.tar.gz#md5=a724e560ad714a89fd5ae3a3a26977ce (from http://pypi.python.org/simple/django-wikiapp/), version: 0.1.1
+    Found link http://pypi.python.org/packages/any/d/django-wikiapp/django-wikiapp-0.1.2.linux-i686.tar.gz#md5=6ab4663e5876c761e45adb66859b8f3c (from http://pypi.python.org/simple/django-wikiapp/), version: 0.1.2.linux-i686
+    Found link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.0.tar.gz#md5=0bacd5b0b1b4f11581e244aff58fde52 (from http://pypi.python.org/simple/django-wikiapp/), version: 0.1.0
+    Found link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.2.tar.gz#md5=dbfe3d30413a78492f350cfd27559b88 (from http://pypi.python.org/simple/django-wikiapp/), version: 0.1.2
+    Skipping link http://launchpad.net/django-wikiapp/ (from http://pypi.python.org/simple/django-wikiapp/); not a file
+  Analyzing links from page https://launchpad.net/django-wikiapp/
+    Skipping link http://feeds.launchpad.net/django-wikiapp/announcements.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/latest-bugs.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/branches.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/revisions.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/lazr/assets/skins/sam/lazr.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/inlineedit/assets/skins/sam/editor.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/autocomplete/assets/skins/sam/autocomplete.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/overlay/assets/skins/sam/pretty-overlay.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/formoverlay/assets/formoverlay.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/picker/assets/skins/sam/picker.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/activator/assets/skins/sam/activator.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/choiceedit/assets/choiceedit-core.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/@@/launchpad.png (from https://launchpad.net/django-wikiapp/); unknown archive format: .png
+    Skipping link https://launchpad.net/django-wikiapp/+login (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://code.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://bugs.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://blueprints.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://translations.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://answers.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+announcements (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+download (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://bazaar.launchpad.net/%7edjango-wikiapp/django-wikiapp/main/files/head:/docs/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://pypi.python.org/pypi/django-wikiapp/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://pypi.python.org/packages/source/d/django-wikiapp/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7eeopadoan (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7edjango-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+filebug (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+addquestion (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+series (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7ejezdez (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7ebrosner (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7edanfairs (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7egabriel.padoan (from https://launchpad.net/django-wikiapp/); unknown archive format: .padoan
+    Skipping link https://launchpad.net/django-wikiapp/+topcontributors (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+rdf (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/+tour (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://help.launchpad.net/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://canonical.com/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/legal (from https://launchpad.net/django-wikiapp/); not a file
+  Analyzing links from page https://launchpad.net/django-wikiapp/
+    Skipping link http://feeds.launchpad.net/django-wikiapp/announcements.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/latest-bugs.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/branches.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link http://feeds.launchpad.net/django-wikiapp/revisions.atom (from https://launchpad.net/django-wikiapp/); unknown archive format: .atom
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/lazr/assets/skins/sam/lazr.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/inlineedit/assets/skins/sam/editor.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/autocomplete/assets/skins/sam/autocomplete.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/overlay/assets/skins/sam/pretty-overlay.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/formoverlay/assets/formoverlay.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/picker/assets/skins/sam/picker.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/activator/assets/skins/sam/activator.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/+icing/rev8327/lazr/build/choiceedit/assets/choiceedit-core.css (from https://launchpad.net/django-wikiapp/); unknown archive format: .css
+    Skipping link https://launchpad.net/@@/launchpad.png (from https://launchpad.net/django-wikiapp/); unknown archive format: .png
+    Skipping link https://launchpad.net/django-wikiapp/+login (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://code.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://bugs.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://blueprints.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://translations.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://answers.launchpad.net/django-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+announcements (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+download (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://bazaar.launchpad.net/%7edjango-wikiapp/django-wikiapp/main/files/head:/docs/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://pypi.python.org/pypi/django-wikiapp/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://pypi.python.org/packages/source/d/django-wikiapp/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7eeopadoan (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7edjango-wikiapp (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+filebug (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+addquestion (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+series (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7ejezdez (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7ebrosner (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7edanfairs (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/%7egabriel.padoan (from https://launchpad.net/django-wikiapp/); unknown archive format: .padoan
+    Skipping link https://launchpad.net/django-wikiapp/+topcontributors (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/django-wikiapp/+rdf (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/+tour (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://help.launchpad.net/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link http://canonical.com/ (from https://launchpad.net/django-wikiapp/); not a file
+    Skipping link https://launchpad.net/legal (from https://launchpad.net/django-wikiapp/); not a file
+  Ignoring link http://pypi.python.org/packages/any/d/django-wikiapp/django-wikiapp-0.1.2.linux-i686.tar.gz#md5=6ab4663e5876c761e45adb66859b8f3c (from http://pypi.python.org/simple/django-wikiapp/), version 0.1.2.linux-i686 doesn't match ==0.2.0dev
+  Ignoring link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.2.tar.gz#md5=dbfe3d30413a78492f350cfd27559b88 (from http://pypi.python.org/simple/django-wikiapp/), version 0.1.2 doesn't match ==0.2.0dev
+  Ignoring link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.1.tar.gz#md5=a724e560ad714a89fd5ae3a3a26977ce (from http://pypi.python.org/simple/django-wikiapp/), version 0.1.1 doesn't match ==0.2.0dev
+  Ignoring link http://pypi.python.org/packages/source/d/django-wikiapp/django-wikiapp-0.1.0.tar.gz#md5=0bacd5b0b1b4f11581e244aff58fde52 (from http://pypi.python.org/simple/django-wikiapp/), version 0.1.0 doesn't match ==0.2.0dev
+  Could not find a version that satisfies the requirement django-wikiapp==0.2.0dev (from versions: 0.1.2.linux-i686, 0.1.2, 0.1.1, 0.1.0)
+No distributions matching the version for django-wikiapp==0.2.0dev
+Exception information:
+Traceback (most recent call last):
+  File "/home/skylar/pinax/pinax-env/lib/python2.6/site-packages/pip-0.4-py2.6.egg/pip.py", line 274, in main
+    self.run(options, args)
+  File "/home/skylar/pinax/pinax-env/lib/python2.6/site-packages/pip-0.4-py2.6.egg/pip.py", line 431, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/home/skylar/pinax/pinax-env/lib/python2.6/site-packages/pip-0.4-py2.6.egg/pip.py", line 1813, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/home/skylar/pinax/pinax-env/lib/python2.6/site-packages/pip-0.4-py2.6.egg/pip.py", line 1109, in find_requirement
+    raise DistributionNotFound('No distributions matching the version for %s' % req)
+DistributionNotFound: No distributions matching the version for django-wikiapp==0.2.0dev

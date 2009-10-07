@@ -1,0 +1,58 @@
+{% extends "profiles/base.html" %}
+
+{% load i18n %}
+{% load pagination_tags %}
+{% load avatar_tags %}
+{% load humanize %}
+
+{% block head_title %}{% blocktrans %}All Profiles{% endblocktrans %}{% endblock %}
+
+{% block body %}
+    <div id="projects-nav">
+    <form method="GET" action="">
+        <input type="text" name="search" value="{{ search_terms }}" />
+        <input type="submit" value="Search" />
+    </form>
+
+        <p>{% trans "Order by:" %}
+            {% ifequal order 'date' %}
+                <a href="{% url profile_list %}?order=name">{% trans "Name" %} &uarr;</a>
+            {% else %}
+                <a href="{% url profile_list %}?order=date">{% trans "Date" %} &darr;</a>
+            {% endifequal %}
+            </p>
+    </div>
+
+
+    <h1>{% trans "Profiles" %}</h1>
+
+    {% if users %}
+
+        {% autopaginate users%}
+        
+        {% ifequal order 'date'  %}
+            {% regroup users by date_joined.date as users_by_date_joined %}
+
+            {% for date in users_by_date_joined %}
+        <div style="clear:both;"></div>
+                <h2 class="join_date">{{ date.grouper|naturalday:_("MONTH_DAY_FORMAT")|capfirst }}</h2>
+
+                {% for user in date.list %}
+
+                {{user.get_absolute_url}}
+                {% endfor %}
+            {% endfor %}
+            {% else %}
+        <div style="clear:both;"></div>
+
+        {% for user in users %}
+        {{user.get_absolute_url}}
+            {% endfor %}
+        {% endifequal %}    
+        
+        {% paginate %}
+        
+       {% else %}
+           <p>No profile were found.</p>
+      {% endif %}
+{% endblock %}

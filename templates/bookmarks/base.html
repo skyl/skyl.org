@@ -1,0 +1,14 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block body_class %}bookmarks{% endblock %}
+
+{% block subnav %}
+    <ul>
+        <li><a href="{% url all_bookmarks %}">{% trans "All links" %}</a></li>
+        <li><a href="{% url friends_bookmarks %}">{% trans "Friends' Links" %}</a></li>
+        <li><a href="{% url your_bookmarks %}">{% trans "Your Links" %}</a></li>
+        <li><a href="{% url add_bookmark %}">{% trans "Add Link" %}</a></li>
+    </ul>
+{% endblock %}

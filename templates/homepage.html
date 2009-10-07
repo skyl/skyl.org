@@ -1,0 +1,56 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load ifsetting_tag %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block tab_id %}id="home_tab"{% endblock %}
+
+{% block body %}
+    <h1>{% trans "We are here to do business" %}</h1>
+    
+    <p>
+            We match the right people to the right projects.
+            We have project solutions.
+    </p>
+
+    <p> 
+            You can find programmers, designers, statisticians, systems administrators and software architects here,
+            people well-versed in various technologies and languages.  You can also find people with diverse skills
+            from audio production to horticulture to scientific glass-blowing. 
+    </p>
+    <p>
+            We work on open source and collaborative projects and provide proprietary business application
+            solutions.  We look for contract work and fulltime employment.  We are here to find talented people.
+    </p>
+    <p>
+            We are here to make money with honest business.
+    </p>
+    
+    
+    <h2>{% trans "Knowing your Collaborators" %}</h2>
+    
+    <p>
+        {% blocktrans %}
+        Spammers, con-artists, and those not dedicated to excellence in their trade will not last long here.
+        If someone does not live up to their end of the bargain, it will be their first and last mistake at
+        skyl.org.  We strive for a high level of transparency so everyone here will be known by their fruits.
+        You can pick people whose fruits you like.
+        {% endblocktrans %}
+    </p>
+   
+    {% if user.is_authenticated %}
+        {% url what_next as what_next_url %}
+        <p class="what_next">{% blocktrans %}Wondering <a href="{{ what_next_url }}">What Next</a>?{% endblocktrans %}</p>
+    {% else %}
+        {% url acct_login as login_url %}
+        {% ifsetting ACCOUNT_OPEN_SIGNUP %}
+            {% url acct_signup as signup_url %}
+            <p>{% blocktrans %}You can <a href="{{ signup_url }}">Sign up</a> and <a href="{{ login_url }}">Log in</a> to try out the site.{% endblocktrans %}</p>
+        {% else %}
+            <p>{% blocktrans %}You can <a href="{{ login_url }}">Log in</a> to try out the site.{% endblocktrans %}</p>
+        {% endifsetting %}
+    {% endif %}
+    
+{% endblock %}

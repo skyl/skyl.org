@@ -1,0 +1,31 @@
+{% load i18n %}
+{% load markup_tags %}
+{% load avatar_tags %}
+{% load extra_tagging_tags %}
+
+<div class="blog-post clearfix" >
+    <h3><a href="{{ blog_post.get_absolute_url }}">{{ blog_post.title }}</a></h3>
+    <div class="blog-post-meta" style="width:15%; text-align:center;">
+        {% avatar blog_post.author 40 %}
+        <p><b>{% trans "Posted:" %}</b><br />
+            <a href="{% url profile_detail blog_post.author.username %}">{{ blog_post.author.username }}</a> {% trans "on" %} {{ blog_post.publish|date }}</p>
+        <div class="blog-tags">
+            <p>{% show_tags_for blog_post %}</p>
+            <a href="{% url blog_edit blog_post.id %}">Edit Post</a>
+        </div>
+    </div>
+
+    <div class="blog-post-tease" style="width:40%;">
+        {% if blog_post.tease %}
+             {% with blog_post.tease as body %}
+                {{ body|apply_markup:blog_post.markup }}
+            {% endwith %}
+        {% else %}
+            {% with blog_post.body|truncatewords:"150" as body %}
+                {{ body|apply_markup:blog_post.markup }}
+            {% endwith %}
+        {% endif %}
+    </div>
+
+
+</div>

@@ -1,0 +1,384 @@
+/*
+
+
+#tabhead .logo {
+    height:80px;
+    width:190px;
+    float:left;
+}
+
+#right_tabs {
+    top:1px;
+    position:absolute;
+    position:relative;
+    width:600px;
+    margin: 0 auto;
+    right:0px;
+}
+
+#subnav ul {
+    margin:0 auto;
+    padding:0;
+    width:60%;
+    float:center;
+}
+
+ul.tabs {
+    margin:0 auto;
+}
+    */
+#tabhead {
+    background:#fff;
+    border-bottom:none;
+    margin:1em 2em 0 2em;
+}
+#tabhead .logo {
+    height:80px;
+    padding-left:0px;
+    padding-top:0px;
+}
+
+#tabhead .login {
+    color:#000;
+    position:absolute;
+    right:15px;
+    top:6px;
+}
+
+#tabhead .login a, #tabhead .login a:visited {
+    color:#8b8543;
+    text-decoration:none;
+}
+
+#tabhead .login a:hover {
+        color:#c44e00;
+}   
+
+ul.tabs li {
+    background-color:#000;
+    display:inline;
+    list-style-type:none;
+    margin:0 1px;
+    padding:5px 0 4px;
+}
+
+ul.tabs a, ul.tabs a:visited {
+    color:#fff;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+ul.tabs li a {
+    padding:7px 16px;
+}
+
+ul.tabs a:hover {
+    color:#000;
+}
+
+#subnav {
+    background:#FFF none repeat scroll 0 0;
+    margin:0;
+    padding:0;
+    border-bottom:none;
+}
+
+#subnav ul a:hover {
+    background:#000 none repeat scroll 0 0;
+    color:#FFFFFF;
+}
+
+#tabhead .logo img {
+    margin: 0.5em 1em;
+}
+
+#body {
+    clear:both;
+    margin:0 auto;
+    padding:10px;
+    width:80%;
+}
+
+#footer {
+    clear:both;
+    color:#999999;
+    margin:50px auto;
+    padding:10px;
+    width:800px;
+    text-align:center;
+}
+
+table.bookmarks {
+    width: 100%;
+}
+/*
+tr {
+    text-align:center;
+}
+*/
+.blog-post h2 {
+    font-style:normal;
+    margin:10px 0 0;
+}
+
+a, a:visited {
+    color:#8b8543;
+    text-decoration:none;
+}
+a:hover {
+    color:#c44e00;
+}
+
+.blog-post-meta {
+    float:right;
+    margin-left:30px;
+    width:25%;
+}
+
+
+.blog-post-tease {
+    float:left;
+    width:inherit;
+}
+
+div.blog-post h3 { 
+    text-align:center; 
+    width:90%;
+    margin: 1em auto 0.25em auto;
+}
+
+
+
+ul#messages li {
+    background:#eef none repeat scroll 0 0;
+    border:1px solid #BBCC99;
+    margin:3px;
+    padding:5px 10px;
+}
+
+body {
+    color:#000;
+    font-family:Courier;
+    font-size:13pt;
+}
+
+#subnav ul a:link, #subnav ul a:visited {
+    color:#000;
+    float:left;
+    font-weight:bold;
+    padding:4px 20px;
+    text-decoration:none;
+}
+
+#subnav ul a:hover {
+    color:#fff;
+    float:left;
+    font-weight:bold;
+    padding:4px 20px;
+    text-decoration:none;
+}
+
+.uniForm .inlineLabels textarea {
+    height:12em;
+    width:60%;
+}
+
+.uniForm .inlineLabels textarea#id_tease {
+    height:4em;
+    width:60%;
+}
+.uniForm .inlineLabels label, .uniForm .inlineLabels .label {
+    margin:0.3em 2% 0 0;
+    width:20%;
+}
+
+.uniForm .inlineLabels .formHint {
+    color:#777777;
+    font-size:0.9em;
+    margin-left:33%;
+    width:60%;
+    margin-top:0;
+    position:static;
+}
+
+pre.literal-block {
+    font-size: 110%;
+    margin-left:1em;
+    width:90%;
+    margin:1em auto;
+}
+
+p { margin: 0.5em; }
+
+div.blog-post-meta a { text-decoration:underline; }
+
+div#projects-nav {width:35%; float:right;font-size:80%;
+    margin-top:2em;
+    text-align:right;
+}
+
+div.members {
+    background:#FFF none repeat scroll 0 0;
+    margin-bottom:20px;
+    padding:8px;
+    text-align:center;
+}
+
+div.members .details {
+    margin:0 auto;
+    overflow:hidden;
+    text-align:center;
+    width:60px;
+}
+
+.form-toggle p span {
+    background:#fff none repeat scroll 0 0;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    border-top:1px solid #000;
+    cursor:pointer;
+    padding:3px 10px;
+    color:#000;
+}
+
+.task_list .odd {
+    background-color:#f6f6f6;
+}
+
+div.task-meta {
+    float:left;
+    font-size:80%;
+    margin:1em;
+    padding:1em;
+    width:20%;
+}
+div.task div.bulk {
+    margin-left:25%;
+    padding:1em;
+}
+
+#subnav ul {
+    float:right;
+    margin:0 20px;
+    padding:0;
+}
+
+table.bookmarks td.vote {
+    text-align:center;
+    vertical-align:middle;
+    width:100px;
+}
+
+td.meta {
+    margin:12px;
+    width:25%;
+    text-align:center;
+}
+table.bookmarks td {
+    padding:5px;
+    vertical-align:top;
+}
+
+div#calendar {
+    font-size:80%;
+}
+
+div.scrollable {
+    float:none;
+}
+scrollab...navig.css (line 3)
+div.scrollable {
+    background-color:#EFEFEF;
+    border:1px outset #CCCCCC;
+    height:300px;
+    overflow:hidden;
+    padding:10px 0;
+    position:relative;
+    width:80%;
+    margin:0 auto;
+}
+
+form.uniForm {
+    font-size:80%;
+}
+
+.form-toggle form {
+    background:#fff none repeat scroll 0 0;
+    border:1px solid #99BBCC;
+    margin:0;
+    padding:3px 6px;
+    color: #000;
+}
+
+h1 { margin: 0.5em 0; }
+
+table.listings tr { text-align: left; margin-left:5%; }
+
+table.listings h2 {text-align:center; }
+
+div.friends .details { width:60px; margin:0 auto; }
+
+table.task_list th {
+    background:#99BBCC none repeat scroll 0 0;
+    color:#FFFFFF;
+    padding:5px 20px 5px 5px;
+    text-align:center;
+}
+
+tr.task_grouping .toggle {
+    cursor:pointer;
+    float:left;
+}
+
+div.ac_results {
+    z-index:10000;
+}
+
+div#body {min-height:600px;}
+
+div.groups, div.friends {
+    background:#EEEEFF none repeat scroll 0 0;
+    margin-bottom:20px;
+    padding:8px;
+}
+
+div.groups h2 {
+    margin:0 0 5px;
+    padding:0;
+}
+
+.uniForm .inlineLabels .textInput, .uniForm .inlineLabels .fileUpload, .uniForm .inlineLabels .selectInput, .uniForm .inlineLabels select, .uniForm .inlineLabels textarea {
+    float:right;
+}
+
+input[type="text"], input[type="password"], textarea {
+    background:#F3F3F3 url(../images/form-shadow.png) repeat-x scroll left top;
+    border-color:#C6C6C6 #C6C6C6 #E3E3E3;
+    border-style:solid;
+    border-width:1px;
+    color:#666666;
+    font-size:12pt;
+    margin:3px;
+    padding:3px;
+    float:right;
+    width:60%;
+}
+
+div.right_panel {
+    float:right;
+    margin-top:20px;
+    width:25%;
+    z-index:999;
+}
+
+div.left_panel {
+    width:70%;
+}
+
+div.form_block input {float:right;}
+
+th {text-align:left;padding:0.2em;padding-right:1em;}
+
+table textarea#id_comment {width:100%;height:5em;}
+
+td input { margin: 1em 0; }
