@@ -45,8 +45,8 @@ def friends(request, form_class=JoinRequestForm,
     else:
         join_request_form = form_class()
     
-    invites_received = request.user.invitations_to.invitations().order_by("-sent")
-    invites_sent = request.user.invitations_from.invitations().order_by("-sent")
+    invites_received = request.user.invitations_to.order_by("-sent")
+    invites_sent = request.user.invitations_from.order_by("-sent")
     joins_sent = request.user.join_from.all().order_by("-sent")
     
     return render_to_response(template_name, {

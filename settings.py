@@ -10,7 +10,7 @@ PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 # tells Pinax to use the default theme
 PINAX_THEME = 'default'
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 # tells Pinax to serve media through django.views.static.serve.
@@ -50,7 +50,7 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, "site_media")
 
 # URL that handles the media served from MEDIA_ROOT.
 # Example: "http://media.lawrence.com"
-MEDIA_URL = '/site_media/'
+MEDIA_URL = '/site-media/'
 
 
 # bsolute path to the directory that holds static files like app media.
@@ -59,7 +59,8 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'site_media')
 
 # URL that handles the static files like app media.
 # Example: "http://media.lawrence.com"
-STATIC_URL = '/site_media/'
+STATIC_URL = '/site-media/'
+
 STATICFILES_DIRS = (
             ('skyl', os.path.join(PROJECT_ROOT, 'media')),
             ('pinax', os.path.join(PINAX_ROOT, 'media', PINAX_THEME)),
@@ -69,7 +70,7 @@ STATICFILES_DIRS = (
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = '/site_media/admin/'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -259,9 +260,6 @@ WIKI_REQUIRES_LOGIN = True
 # following URL: https://developer.yahoo.com/wsregapp/
 # YAHOO_MAPS_API_KEY = ''
 
-AVATAR_DEFAULT_URL = MEDIA_URL + 'avatar.jpg'
-AVATAR_GRAVATAR_BACKUP = False
-
 STATICFILES_EXTRA_MEDIA = (
         ('pinax', os.path.join(PINAX_ROOT, 'media', PINAX_THEME)),
         ('SKYL', os.path.join(PROJECT_ROOT, 'media')),
@@ -273,3 +271,6 @@ try:
     from local_settings import *
 except ImportError:
     pass
+
+AVATAR_DEFAULT_URL = MEDIA_URL + 'avatar.jpg'
+AVATAR_GRAVATAR_BACKUP = False

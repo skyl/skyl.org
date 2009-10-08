@@ -382,3 +382,15 @@ th {text-align:left;padding:0.2em;padding-right:1em;}
 table textarea#id_comment {width:100%;height:5em;}
 
 td input { margin: 1em 0; }
+
+.uniForm textarea, .uniForm .blockLabels textarea {
+height:12em;
+width:53%;
+float:right;
+}
+
+div#facebox {
+}
+#facebox table {
+    width:600px;
+}

@@ -38,8 +38,9 @@
                 <h2 class="join_date">{{ date.grouper|naturalday:_("MONTH_DAY_FORMAT")|capfirst }}</h2>
 
                 {% for user in date.list %}
-
-                {{user.get_absolute_url}}
+<p>
+                <a href="{{user.get_absolute_url}}">{{user}}</a>
+</p>
                 {% endfor %}
             {% endfor %}
             {% else %}
