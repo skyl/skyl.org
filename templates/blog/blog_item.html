@@ -5,7 +5,7 @@
 
 <div class="blog-post clearfix" >
     <h3><a href="{{ blog_post.get_absolute_url }}">{{ blog_post.title }}</a></h3>
-    <div class="blog-post-meta" style="width:15%; text-align:center;">
+    <div class="blog-post-meta">
         {% avatar blog_post.author 40 %}
         <p><b>{% trans "Posted:" %}</b><br />
             <a href="{% url profile_detail blog_post.author.username %}">{{ blog_post.author.username }}</a> {% trans "on" %} {{ blog_post.publish|date }}</p>
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="blog-post-tease" style="width:70%;">
+    <div class="blog-post-tease">
         {% if blog_post.tease %}
              {% with blog_post.tease as body %}
                 {{ body|apply_markup:blog_post.markup }}

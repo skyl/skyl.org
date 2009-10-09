@@ -131,14 +131,14 @@ a:hover {
 
 .blog-post-meta {
     float:right;
-    margin-left:30px;
-    width:25%;
+    margin-left:2%;
+    width:30%;
 }
 
 
 .blog-post-tease {
     float:left;
-    width:inherit;
+    width:65%;
 }
 
 div.blog-post h3 { 
