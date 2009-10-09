@@ -6,6 +6,42 @@ span.s {
     color: #8b8543;
 }
 
+span.n {
+}
+
+span.o {
+    color: #e78543;
+}
+
+span.c {
+color:#00004d;
+}
+
+span.nn {
+color:#0c2305;
+}
+
+span.ow {
+color:#00d8ff;
+}
+
+span.kn {
+color:#350635;
+}
+span.nd {
+color:#4b3336;
+}
+span.nf {
+color: #58351d;
+}
+span.bp {
+color:#20813a;
+}
+
 div.codeblock {
     margin-left: 3em;
+}
+
+td.linenos {
+    padding-right: 0.8em;
 }
