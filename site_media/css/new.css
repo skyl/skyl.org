@@ -208,7 +208,7 @@ pre.literal-block {
     margin:1em auto;
 }
 
-p { margin: 0.5em; }
+p { margin: 0.5em 0; }
 
 div.blog-post-meta a { text-decoration:underline; }
 
