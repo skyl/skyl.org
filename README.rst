@@ -12,4 +12,4 @@ This project uses Django 1.1 or trunk but django-events does not work with <1.1
 
     pip install -U django
 
-
+Please do use virtualenv
