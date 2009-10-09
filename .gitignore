@@ -9,4 +9,4 @@ local_settings.py
 *.swp
 *.~
 site_media/avatars/*
-
+mycogia

@@ -11,4 +11,9 @@ DATABASE_PASSWORD = ''
 DATABASE_HOST = ''
 DATABASE_PORT = ''
 
+# Make this unique, and don't share it with anybody.
 SECRET_KEY = ''
+
+STATIC_URL = ''
+MEDIA_URL = ''
+
