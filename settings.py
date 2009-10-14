@@ -10,7 +10,7 @@ PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 # tells Pinax to use the default theme
 PINAX_THEME = 'default'
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 # tells Pinax to serve media through django.views.static.serve.
@@ -220,7 +220,7 @@ EMAIL_DEBUG = DEBUG
 CONTACT_EMAIL = "skyl@skyl.org"
 SITE_NAME = "skyl.org"
 LOGIN_URL = "/account/login/"
-LOGIN_REDIRECT_URLNAME = "what_next"
+LOGIN_REDIRECT_URLNAME = "home"
 
 INTERNAL_IPS = (
     '127.0.0.1',

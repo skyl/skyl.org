@@ -11,7 +11,10 @@
             <a href="{% url profile_detail blog_post.author.username %}">{{ blog_post.author.username }}</a> {% trans "on" %} {{ blog_post.publish|date }}</p>
         <div class="blog-tags">
             <p>{% show_tags_for blog_post %}</p>
+            {% ifequal blog_post.author.id request.user.id %}
             <a href="{% url blog_edit blog_post.id %}">Edit Post</a>
+            {% else %}
+            {% endifequal %}
         </div>
     </div>
 
