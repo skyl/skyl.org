@@ -47,6 +47,15 @@ div.codeblock {
 span.cp {
 color:#00004b;
 }
+span.nv {
+color:#5c709a;
+}
+span.nt {
+color:#85152d;
+}
+span.na {
+color:#3e6825;
+}
 
 td.linenos {
     padding-right: 0.8em;
