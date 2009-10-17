@@ -22,7 +22,7 @@ color:#0c2305;
 }
 
 span.ow {
-color:#00d8ff;
+color:#7a004b;
 }
 
 span.kn {
@@ -42,6 +42,10 @@ color:#4b3354;
 }
 div.codeblock {
     margin-left: 3em;
+}
+
+span.cp {
+color:#00004b;
 }
 
 td.linenos {
