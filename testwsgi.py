@@ -14,6 +14,12 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
+import settings
+import sys
+from os.path import abspath, dirname, join
+sys.path.insert(0, join(settings.PINAX_ROOT, "apps"))
+sys.path.insert(0, join(settings.PROJECT_ROOT, "apps"))
+
 import django.core.handlers.wsgi
 import os
 import tornado.httpserver
