@@ -7,6 +7,7 @@ span.s {
 }
 
 span.n {
+color:#0b4f86;
 }
 
 span.o {
@@ -18,7 +19,7 @@ color:#00004d;
 }
 
 span.nn {
-color:#0c2305;
+color:#0e652a;
 }
 
 span.ow {
@@ -43,7 +44,6 @@ color:#4b3354;
 div.codeblock {
     margin-left: 3em;
 }
-
 span.cp {
 color:#00004b;
 }
@@ -55,6 +55,17 @@ color:#85152d;
 }
 span.na {
 color:#3e6825;
+}
+span.s1 {
+color:#2b0b39;
+}
+
+span.go {
+color:#680a05;
+}
+
+span.gp {
+color:#dfac26;
 }
 
 td.linenos {
