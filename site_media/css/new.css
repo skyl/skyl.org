@@ -179,8 +179,8 @@ body {
 }
 
 .uniForm .inlineLabels textarea {
-    height:12em;
-    width:60em;
+    height:50em;
+    width:50em;
 }
 
 .uniForm .inlineLabels textarea#id_tease {

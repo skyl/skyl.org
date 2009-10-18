@@ -67,6 +67,13 @@ color:#680a05;
 span.gp {
 color:#dfac26;
 }
+span.p, span.c1 {
+color:#00004d;
+}
+span.nb {
+color:#50004d;
+}
+
 
 td.linenos {
     padding-right: 0.8em;
