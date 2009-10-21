@@ -73,7 +73,11 @@ color:#00004d;
 span.nb {
 color:#50004d;
 }
-
+/*
+span.sr {
+color:#c42700;
+}
+*/
 
 td.linenos {
     padding-right: 0.8em;

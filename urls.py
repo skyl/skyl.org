@@ -120,3 +120,10 @@ if settings.SERVE_MEDIA:
     urlpatterns += patterns('', 
         (r'^site_media/(?P<path>.*)$', 'staticfiles.views.serve')
     )
+
+# sitemap code is here
+
+urlpatterns += patterns('',
+        (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps})
+)
+

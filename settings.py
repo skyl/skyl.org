@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     'django.contrib.markup',
     'django.contrib.admindocs',
+    'django.contrib.sitemaps',
     'pinax.templatetags',
     
     # external
