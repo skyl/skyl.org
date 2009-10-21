@@ -123,6 +123,26 @@ if settings.SERVE_MEDIA:
 
 # sitemap code is here
 
+from django.contrib.sitemaps import GenericSitemap
+from blog.models import Post
+from listings.models import Listing
+
+info_dict = {
+    'queryset': Post.objects.filter( status = 2 ),
+    'date_field': 'publish',
+}
+
+info_dict2 = {
+    'queryset':  Listing.objects.filter( state = 1 ),
+    'date_field': 'time',
+}
+
+
+sitemaps = {
+    'listings': GenericSitemap(info_dict2),
+    'blog': GenericSitemap(info_dict),
+}
+
 urlpatterns += patterns('',
         (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps})
 )
