@@ -1,3 +1,5 @@
+DEBUG=True
+
 EMAIL_HOST = ''
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
@@ -12,8 +14,8 @@ DATABASE_HOST = ''
 DATABASE_PORT = ''
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = ''
+SECRET_KEY = 'hi_yj+lj%x))l6_3fl8q_q3b^o%fv^zxd7dsadu0%2mrzm*hkf'
 
-STATIC_URL = ''
-MEDIA_URL = ''
+#STATIC_URL = ''
+#MEDIA_URL = ''
 
