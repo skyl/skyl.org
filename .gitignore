@@ -1,3 +1,5 @@
+pip_log.txt
+build/
 site_media/photologue/*
 cron_mail.log
 dev.db
