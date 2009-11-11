@@ -10,7 +10,11 @@ PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 # tells Pinax to use the default theme
 PINAX_THEME = 'default'
 
-DEBUG = False
+try:
+    from local_settings import DEBUG
+except ImportError:
+    DEBUG = False
+
 TEMPLATE_DEBUG = DEBUG
 
 # tells Pinax to serve media through django.views.static.serve.
@@ -50,7 +54,7 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, "site_media")
 
 # URL that handles the media served from MEDIA_ROOT.
 # Example: "http://media.lawrence.com"
-MEDIA_URL = '/site_media/'
+MEDIA_URL = '/site_media/media/'
 
 
 # bsolute path to the directory that holds static files like app media.
@@ -59,7 +63,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'site_media')
 
 # URL that handles the static files like app media.
 # Example: "http://media.lawrence.com"
-STATIC_URL = '/site_media/'
+STATIC_URL = '/site_media/static/'
 
 STATICFILES_DIRS = (
             ('skyl', os.path.join(PROJECT_ROOT, 'media')),
