@@ -178,11 +178,13 @@ body {
     text-decoration:none;
 }
 
-.uniForm .inlineLabels textarea {
+.uniForm .inlineLabels textarea#id_body {
     height:50em;
     width:50em;
 }
-
+.uniForm .inlineLabels textarea {
+    width:30em;
+}
 .uniForm .inlineLabels textarea#id_tease {
     height:4em;
     width:60%;
@@ -393,4 +395,25 @@ div#facebox {
 }
 #facebox table {
     width:600px;
+}
+
+.video-owner {
+    clear:both;
+    margin: 0.5em 0.5em 0.5em 0em;
+}
+
+.video-detail-description {
+    clear:both;
+    margin: 0.5em 0.5em 0.5em 0em;
+}
+
+.videos-list-description {
+    clear: left;
+}
+
+.loading {
+    display:none;
+    float:left;
+    padding-right:4em;
+    padding-top:0.5em;
 }

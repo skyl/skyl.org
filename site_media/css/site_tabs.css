@@ -1,5 +1,6 @@
 /* SITE-SPECIFIC TAB STYLING */
 
+body.videos #tab_videos a,
 body.listings #tab_listings a,
 body.projects #tab_projects a,
 body.events #tab_events a,
@@ -17,6 +18,7 @@ body.inbox #tab_inbox a
 }
 
 
+body.videos #tab_videos,
 body.listings #tab_listings,
 body.projects #tab_projects,
 body.events #tab_events,

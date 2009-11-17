@@ -1,0 +1,45 @@
+{% extends 'videos/base.html' %}
+
+{% block head_title %}Screencasts and Videos{% endblock %}
+
+{% block body %}
+    {% for v in video_list %}
+	<div style="clear:left;">
+	<a href="{{v.get_absolute_url}}">
+	    <h2>{{v.title}}</h2>
+	</a>
+	</div>
+	<div class='videos-list-description'>
+	    {{ v.description|truncatewords:80 }}
+	</div>
+	<div class='video-owner'>
+	    {% ifequal request.user v.owner %}
+                <a class="dialog-link" href="{% url videos_update slug=v.slug %}">
+                    Edit Video
+                    <img src="{{STATIC_URL}}pinax/images/silk/icons/pencil.png" />
+                </a>
+		<img class="loading" src="{{STATIC_URL}}img/ajax-loader.gif" />
+            {% else %}
+                <a href="{{video.owner.get_absolute_url}}">{{v.owner}}</a>
+            {% endifequal %}
+	</div>
+    {% endfor %}
+
+    {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a href="{% url videos_list %}">FIRST</a>
+            <a href="
+                {% url videos_list %}?page={{page_obj.previous_page_number}}">
+                PREVIOUS
+            </a>
+        {% endif %}
+        {% if page_obj.has_next %}
+            <a href="
+                {% url videos_list %}?page={{page_obj.next_page_number}}">
+                NEXT
+            </a>
+            <a href="{% url videos_list %}?page=last">LAST</a>
+        {% endif %}
+    {% endif %}
+
+{% endblock %}

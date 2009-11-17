@@ -42,6 +42,7 @@
 
 {% block right_tabs %}
         <ul class="tabs">{% spaceless %}
+            <li id="tab_videos"><a href="{% url videos_list %}">{% trans "Videos" %}</a></li>
             <li id="tab_listings"><a href="{% url listings_all %}">{% trans "Listings" %}</a></li>
             <li id="tab_events"><a href="{% url events_all %}">{% trans "Events" %}</a></li>
             <li id="tab_projects"><a href="{% url project_list %}">{% trans "Projects" %}</a></li>
@@ -95,7 +96,7 @@
             }
         );
         
-        $('body.listings #tab_listings, body.events #tab_events, body.projects #tab_projects, body.profile #tab_profile,body.blogs #tab_blogs, body.swaps #tab_swaps, body.photos #tab_photos, body.tribes #tab_tribes, body.tweets #tab_tweets, body.bookmarks #tab_bookmarks, body.locations #tab_locations, body.inbox #tab_inbox').hover(
+        $('body.videos #tab_videos, body.listings #tab_listings, body.events #tab_events, body.projects #tab_projects, body.profile #tab_profile,body.blogs #tab_blogs, body.swaps #tab_swaps, body.photos #tab_photos, body.tribes #tab_tribes, body.tweets #tab_tweets, body.bookmarks #tab_bookmarks, body.locations #tab_locations, body.inbox #tab_inbox').hover(
             function() {
                 $(this).css({"background":"#000",});
             },
@@ -103,7 +104,7 @@
                 $(this).css({"background":"#fff",});
             }
         );
-        $('body.listings #tab_listings a, body.events #tab_events a, body.projects #tab_projects a, body.profile #tab_profile a,body.blogs #tab_blogs a, body.swaps #tab_swaps a, body.photos #tab_photos a, body.tribes #tab_tribes a, body.tweets #tab_tweets a, body.bookmarks #tab_bookmarks a, body.locations #tab_locations a, body.inbox #tab_inbox a').hover(
+        $('body.videos #tab_videos a, body.listings #tab_listings a, body.events #tab_events a, body.projects #tab_projects a, body.profile #tab_profile a,body.blogs #tab_blogs a, body.swaps #tab_swaps a, body.photos #tab_photos a, body.tribes #tab_tribes a, body.tweets #tab_tweets a, body.bookmarks #tab_bookmarks a, body.locations #tab_locations a, body.inbox #tab_inbox a').hover(
             function() {
                 $(this).css({"color":"#fff",});
             },
@@ -111,7 +112,7 @@
                 $(this).css({"color":"#000",});
             }
         );
-        $('div#div_id_slug');
+        //$('div#div_id_slug');
     });
     </script>
     {% block extra_body %}{% endblock %}

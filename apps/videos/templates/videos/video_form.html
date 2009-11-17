@@ -1,0 +1,25 @@
+{% extends 'videos/base.html' %}
+
+{% load uni_form %}
+{% load i18n %}
+
+{% block head_title %}Video Form{% endblock %}
+
+{% block body %}
+<div id="video-form-container">
+<form method="POST" id="video-form" class="uniForm" method='POST' enctype='multipart/form-data'
+	{% if slug %}
+	    action="{% url videos_update slug=slug %}">
+	{% else %}
+	    action="{% url videos_add %}">
+	{% endif %}
+
+    <fieldset class="inlineLabels">            
+	{{ form|as_uni_form }}            
+	<div class="form_block">
+	    <input type="submit" value="{% trans 'add/update' %}">
+        </div>
+    </fieldset>                
+</form>
+</div>
+{% endblock %}

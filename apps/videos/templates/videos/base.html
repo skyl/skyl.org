@@ -1,0 +1,86 @@
+{% extends 'site_base.html' %}
+
+{% load i18n %}
+
+{% block extra_head %}
+    <link href="{{STATIC_URL}}css/jquery-ui.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block body_class %}videos{% endblock %}
+
+{% block subnav %}
+    <ul>
+	{% if user.is_authenticated %}
+	{% comment %}
+            <li><a href="{% url videos_friends %}">{% trans "Friends Videos" %}</a></li>
+            <li><a href="{% url videos_yours %}">{% trans "Your Videos" %}</a></li>
+	{% endcomment %}
+            <li>
+		<a class="dialog-link" href="{% url videos_add %}">{% trans "Add a Video" %}</a>
+		<img class="loading" src="{{STATIC_URL}}img/ajax-loader.gif" />
+	    </li>
+	{% endif %}
+
+	<li><a href="{% url videos_list %}">{% trans "All Videos" %}</a></li>
+    </ul>
+{% endblock %}
+
+{% block extra_body %}
+<script src="{{STATIC_URL}}js/jquery-ui.js"></script>
+<script src="{{STATIC_URL}}js/jquery.validate.min.js"></script>
+<script>
+    var tag_complete = function() {
+	$("#id_tags").autocomplete('/tagging_utils/autocomplete/tasks/task/', {
+	    max: 10,
+            highlight: false,
+	    multiple: true,
+	    multipleSeparator: " ",
+            scroll: true,
+	    scrollHeight: 300,
+	    matchContains: true,
+            autoFill: true,
+	});
+    } 
+
+    $(function() {
+	$('a.dialog-link').click( function(ev){
+	    var hiddenLink = $(this).hide();
+	    $(this).next('img.loading').show();
+	    ev.stopPropagation();
+	    ev.preventDefault();
+
+	    var dia = $('<div/>');
+	    dia.load(ev.target.href + ' #video-form-container', null, function(){
+		dia.dialog({ 
+		    width:800,
+		    modal: true,
+		    open: function() { 
+			    hiddenLink.show(); 
+			    $('img.loading').hide(); 
+			    tag_complete();
+		    },
+		    title: 'Add a video',
+		    beforeclose: function(event, ui) {
+			dia.remove();
+		    }
+		});
+		$('#video-form').validate({
+		    rules: {
+			title: { required:true, maxlength:255, minlength:5 },
+			url: { url:true, maxlength:255 }
+		    },
+		    submitHandler: function(form){
+			$(form).ajaxSubmit( function(){
+			    dia.dialog("close");
+			    window.location.reload();
+			});
+		    },
+		    invalidHandler: function(){
+			$('label.error').addClass('errorlist');
+		    }
+		}); // validate
+	    }); // load
+	}); // click
+    }); // docready
+</script>
+{% endblock %}

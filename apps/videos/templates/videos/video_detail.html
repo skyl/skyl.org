@@ -1,0 +1,60 @@
+{% extends 'videos/base.html' %}
+
+{% load oembed_tags %}
+{% load comments_tag %}
+
+{% block head_title %}{{ video.title }}{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    {% if video.flash %}
+    <script type="text/javascript" 
+	src="{{STATIC_URL}}videos/flowplayer-3.1.4.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}videos/style.css">
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ video.title }}</h1>
+
+    {% if video.flash %}
+        <a {# href="http://e1h13.simplecdn.net/flowplayer/flowplayer.flv" #}
+	    href="{{ video.flash.url }}"
+	    style="display:block;width:520px;height:330px;margin:0 auto;"  
+	    id="player"></a> 
+    
+	<script>
+	    flowplayer("player", "{{STATIC_URL}}videos/flowplayer-3.1.5.swf");
+        </script>
+    {% endif %}
+
+    {% if video.url %}
+	<div style="display:block;width:520px;height:330px;margin:0 auto;">
+	{% oembed %} 
+	    {{video.url}}
+	{% endoembed %}
+	</div>
+    {% endif %}
+   
+    <div class="video-owner">
+	{% ifequal request.user video.owner %}
+	    <a class="dialog-link" href="{% url videos_update slug=video.slug %}">
+		Edit Video
+		<img src="{{STATIC_URL}}pinax/images/silk/icons/pencil.png" />
+	    </a>
+	    <img class="loading" src="{{STATIC_URL}}img/ajax-loader.gif" />
+	{% else %}
+	    <a href="{{video.owner.get_absolute_url}}">{{video.owner}}</a>
+	{% endifequal %}
+    </div>
+
+    {% if video.description %}
+        <div class="video-detail-description">
+	    {{video.description}}
+        </div>
+    {% endif %}
+
+    {% comments video %}
+
+{% endblock %}

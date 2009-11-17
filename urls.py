@@ -71,8 +71,6 @@ urlpatterns = patterns('',
 
     (r'^tagging_utils/', include('tagging_utils.urls')),
     (r'^attachments/', include('attachments.urls')),
-    (r'^events/', include('events.urls')),
-    (r'^listings/', include('listings.urls')),
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 )
 
@@ -120,9 +118,6 @@ if settings.SERVE_MEDIA:
     urlpatterns += patterns('',
         (r'^site_media/', include('staticfiles.urls') ),
     )
-    print True
-
-print 'Im here'
 
 # sitemap code is here
 
@@ -151,3 +146,8 @@ urlpatterns += patterns('',
         (r'^robots.txt$', direct_to_template, {'template':'robots.txt'} ),
 )
 
+urlpatterns += patterns('',
+    (r'^events/', include('events.urls')),
+    (r'^listings/', include('listings.urls')),
+    (r'^videos/', include('videos.urls')),
+)

@@ -197,6 +197,7 @@ INSTALLED_APPS = (
     # Skylar Saveland under implied BSD/Django license
     'events',
     'listings',
+    'videos',
     #'geoms'
 )
 
