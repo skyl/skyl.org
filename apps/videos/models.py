@@ -61,7 +61,7 @@ class VideoRelation(models.Model):
     objects = models.GeoManager()
 
     def __unicode__(self):
-        return '%s <--> %s' % ( self.video, self.content_object)
+        return '%s <--> %s' % ( self.video, self.content_object )
 
 def get_videos_for_object(obj):
     ''' takes an object and returns qs of related Videos.
