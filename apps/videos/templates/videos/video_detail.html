@@ -1,5 +1,5 @@
 {% extends 'videos/base.html' %}
-
+{% load markup_tags %}
 {% load oembed_tags %}
 {% load comments_tag %}
 
@@ -51,7 +51,7 @@
 
     {% if video.description %}
         <div class="video-detail-description">
-	    {{video.description}}
+	    {{video.description|apply_markup:'restructuredtext'}}
         </div>
     {% endif %}
 

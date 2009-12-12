@@ -287,9 +287,6 @@ div#calendar {
 
 div.scrollable {
     float:none;
-}
-scrollab...navig.css (line 3)
-div.scrollable {
     background-color:#EFEFEF;
     border:1px outset #CCCCCC;
     height:300px;

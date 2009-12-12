@@ -8,6 +8,8 @@
 {% block tab_id %}id="home_tab"{% endblock %}
 
 {% block body %}
+
+{% comment %}
     <h1>{% trans "We are here to do business" %}</h1>
     
     <p>
@@ -31,22 +33,26 @@
     
     <h2>{% trans "Knowing your Collaborators" %}</h2>
     
+   {% endcomment %}
     <p>
 This site is open source.  
-The code is available git://github.com/skyl/skyl.org.git.  
+The code is available, <a href="http://github.com/skyl/skyl.org">http://github.com/skyl/skyl.org</a>
 View the issues
 <a href="http://skyl.org/projects/project/skyl-dot-org/tasks/">HERE</a>.  
     </p>
-   
     {% if user.is_authenticated %}
+<div id="notices"></div>
     {% else %}
+    <p>
+    If you want to add your own content
         {% url acct_login as login_url %}
         {% ifsetting ACCOUNT_OPEN_SIGNUP %}
             {% url acct_signup as signup_url %}
-            <p>{% blocktrans %}You can <a href="{{ signup_url }}">Sign up</a> and <a href="{{ login_url }}">Log in</a> to try out the site.{% endblocktrans %}</p>
+            {% blocktrans %}you can <a href="{{ signup_url }}">Sign up</a> and <a href="{{ login_url }}">Log in</a>.{% endblocktrans %}
         {% else %}
-            <p>{% blocktrans %}You can <a href="{{ login_url }}">Log in</a> to try out the site.{% endblocktrans %}</p>
+            {% blocktrans %}You can <a href="{{ login_url }}">Log in</a> to try out the site.{% endblocktrans %}</p>
         {% endifsetting %}
+     </p>
     {% endif %}
     
 {% endblock %}
