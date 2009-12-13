@@ -12,6 +12,9 @@ from django.template.defaultfilters import slugify
 from videos.models import Video
 from videos.forms import VideoForm, VideoFormPriv
 
+
+
+
 def list(request):
     ''' Display the list of videos
 
