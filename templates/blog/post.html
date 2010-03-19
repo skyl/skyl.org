@@ -37,3 +37,9 @@
     <h3>Comments on This Post:</h3>
     {% comments post %}
 {% endblock %}
+
+{% block extra_body %}
+<script src="{{ MEDIA_URL }}jsMath/easy/load.js"></script>
+<script>
+</script>
+{% endblock %}
