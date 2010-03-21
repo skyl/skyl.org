@@ -9,7 +9,7 @@ Tagging is supported if installed.
 The models are GIS ready.
 get_absolute_url with permalink is a must!
 '''
-from django.contrib.gis.db import models
+from django.db import models
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes import generic
 
@@ -37,7 +37,7 @@ class Video(models.Model):
 
     if TagField:
         tags = TagField()
-    objects = models.GeoManager()
+    #objects = models.GeoManager()
 
     @models.permalink
     def get_absolute_url(self):
@@ -58,7 +58,7 @@ class VideoRelation(models.Model):
     object_id = models.PositiveIntegerField()
     content_object = generic.GenericForeignKey()
 
-    objects = models.GeoManager()
+    #objects = models.GeoManager()
 
     def __unicode__(self):
         return '%s <--> %s' % ( self.video, self.content_object )
